@@ -1,5 +1,14 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+
+import {
+  ProfileWrapper,
+  ProfileLink,
+  ProfileAuthor,
+  ProfilePosition,
+  ProfileDescription,
+} from "./styles"
+
 import Avatar from "../Avatar"
 
 export default function Profile() {
@@ -20,11 +29,15 @@ export default function Profile() {
   `)
 
   return (
-    <div className="Profile-wrapper">
+    <ProfileWrapper>
       <Avatar />
-      <h1>{title}</h1>
-      <h2>{position}</h2>
-      <p>{description}</p>
-    </div>
+      <ProfileLink>
+        <ProfileAuthor>
+          {title}
+          <ProfilePosition>{position}</ProfilePosition>
+        </ProfileAuthor>
+      </ProfileLink>
+      <ProfileDescription>{description}</ProfileDescription>
+    </ProfileWrapper>
   )
 }
