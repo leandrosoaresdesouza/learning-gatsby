@@ -13,11 +13,11 @@ const links = [
   },
   {
     label: "Instagram",
-    url: "https://instagram.com/leandrosoaresdesouza",
+    url: "https://instagram.com/leandrossouza",
   },
   {
-    label: "Unsplash",
-    url: "https://unsplash.com/leandrosoaresdesouza",
+    label: "LinkedIn",
+    url: "https://www.linkedin.com/in/leandrosoaresdesouza",
   },
 ]
 
