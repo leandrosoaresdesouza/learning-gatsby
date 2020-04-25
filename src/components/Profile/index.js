@@ -16,17 +16,19 @@ export default function Profile() {
     site: {
       siteMetadata: { title, position, description },
     },
-  } = useStaticQuery(graphql`
-    query MySiteMetadata {
-      site {
-        siteMetadata {
-          title
-          position
-          description
+  } = useStaticQuery(
+    graphql`
+      query MySiteMetadata {
+        site {
+          siteMetadata {
+            title
+            position
+            description
+          }
         }
       }
-    }
-  `)
+    `
+  )
 
   return (
     <ProfileWrapper>
