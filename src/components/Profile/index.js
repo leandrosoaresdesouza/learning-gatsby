@@ -9,6 +9,7 @@ import {
   ProfileDescription,
 } from "./styles"
 
+
 import Avatar from "../Avatar"
 
 export default function Profile() {
